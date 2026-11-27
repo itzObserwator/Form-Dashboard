@@ -156,3 +156,65 @@
 .overviewTheme .revenue .chartHint{color:#fff}
 .overviewTheme .revenue select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath d='m3 4 3 3 3-3' fill='none' stroke='white' stroke-width='1.4'/%3E%3C/svg%3E")}
 .overviewTheme .revenue .chartTooltip{color:#fff;background:#365c30}
+
+/* Overview shares the member journal's luminous glass surfaces and palette. */
+.overviewTheme.memberOverview{--owner-ink:#303b50;--owner-muted:#66758a;--owner-rim:inset 0 0 10px 3px #ffffffd9,inset 0 0 30px 8px #ffffff4d;background:#f6f6f6;color:#303b50}
+.overviewTheme.memberOverview .sidebar{background:linear-gradient(165deg,#f5f1f7,#eef2f4 55%,#e4efeb);border-color:#e2e7eb}
+.overviewTheme.memberOverview .brand{color:#344055}.overviewTheme.memberOverview .brand span{color:#8e799b}.overviewTheme.memberOverview .brand small{color:#8c94a3}
+.overviewTheme.memberOverview .studio{background:radial-gradient(ellipse at 0 0,#e6d9ec,transparent 80%),#dfefea;color:#53667a;border-color:#fff;box-shadow:inset 0 1px 5px #fff}
+.overviewTheme.memberOverview .studio small,.overviewTheme.memberOverview .navLabel{color:#8993a3}
+.overviewTheme.memberOverview .sidebar nav button{color:#768396;background:#ffffff30;border-color:transparent}
+.overviewTheme.memberOverview .sidebar nav button:hover{background:#ffffff90}
+.overviewTheme.memberOverview .sidebar nav button[aria-current]{background:radial-gradient(ellipse at 95% 110%,#39726f,transparent 78%),linear-gradient(135deg,#655172,#34485f);color:#fff;border-color:#ffffffa0;box-shadow:inset 0 0 6px 2px #ffffff70}
+.overviewTheme.memberOverview .sidebar nav button[aria-current] svg{color:#fff}
+.overviewTheme.memberOverview .sidebar nav button small{color:#8992a6}.overviewTheme.memberOverview .sidebar nav button i{background:#ded6e8;color:#7b688c}
+.overviewTheme.memberOverview .sampleNote{border-color:#ffffffc0;color:#8b94a2}.overviewTheme.memberOverview .sampleNote strong{color:#65758a}
+.overviewTheme.memberOverview .owner strong{color:#506378}.overviewTheme.memberOverview .owner small{color:#8a99a8}
+.overviewTheme.memberOverview .topbar{background:#ffffff65;border-color:#e6e9ed}.overviewTheme.memberOverview .breadcrumb{color:#98a1af}.overviewTheme.memberOverview .breadcrumb strong{color:#596b80}
+.overviewTheme.memberOverview .sampleTag{background:#eee6f2;color:#8a7596;border:1px solid #fff}
+.overviewTheme.memberOverview .iconButton{color:#617389}.overviewTheme.memberOverview .ownerInitial{background:#e5ecef;color:#718094}
+.overviewTheme.memberOverview .pageHeading h1{color:#303b50;font-weight:500;letter-spacing:-1.2px}
+.overviewTheme.memberOverview .kicker{color:#8b96a6}.overviewTheme.memberOverview .pageHeading>div>p:last-child{color:#768397}
+.overviewTheme.memberOverview .primaryButton{background:radial-gradient(ellipse at 95% 110%,#39726f,transparent 78%),linear-gradient(135deg,#655172,#34485f);color:#fff;border:1px solid #fff;box-shadow:inset 0 0 5px 1px #ffffffb0}
+.overviewTheme.memberOverview .secondaryButton{background:#ffffff65;color:#627c91;border:1px solid #fff;box-shadow:inset 0 1px 5px #ffffffb0}
+.overviewTheme.memberOverview .textButton{color:#71829a}
+.overviewTheme.memberOverview :global(.workflow-range){background:radial-gradient(ellipse at 5% 0,#e4d8ed,transparent 78%),radial-gradient(ellipse at 100% 110%,#d2e9e4,transparent 80%),#e6edf2;border:1px solid #fff;box-shadow:var(--owner-rim);border-radius:24px;padding:16px 21px}
+.overviewTheme.memberOverview :global(.workflow-range label){color:#7d8ca1}.overviewTheme.memberOverview :global(.workflow-range input){color:#566b83;background:transparent;box-shadow:none;border:0}
+.overviewTheme.memberOverview :global(.workflow-range .workflow-muted){color:#8493a6}
+.overviewTheme.memberOverview .stats{padding:0;gap:16px;background:none;border:0;box-shadow:none;border-radius:0}
+.overviewTheme.memberOverview .stat{padding:21px;border:1px solid #fff;border-radius:25px;box-shadow:var(--owner-rim);background:radial-gradient(ellipse at 0 0,#e4d8ed,transparent 80%),#e3edf0}
+.overviewTheme.memberOverview .stat:nth-child(2){background:radial-gradient(ellipse at 100% 100%,#c7e4da,transparent 80%),#e6eee6}
+.overviewTheme.memberOverview .stat:nth-child(3){background:radial-gradient(ellipse at 0 0,#d9e6f5,transparent 80%),#dcece9}
+.overviewTheme.memberOverview .stat:nth-child(4){background:radial-gradient(ellipse at 0 0,#f6dfd1,transparent 80%),#eadee9}
+.overviewTheme.memberOverview .stat>div{color:#6e7c90}.overviewTheme.memberOverview .stat>strong{color:#465a71}.overviewTheme.memberOverview .stat>strong em{color:#8b9cae}
+.overviewTheme.memberOverview .stat>small,.overviewTheme.memberOverview .stat>.textButton{color:#8091a3}
+.overviewTheme.memberOverview .card{border:1px solid #fff;border-radius:28px;background:radial-gradient(ellipse at 0 0,#e3d9ec,transparent 75%),radial-gradient(ellipse at 100% 100%,#cce7df,transparent 78%),#e4ebf1;box-shadow:var(--owner-rim)}
+.overviewTheme.memberOverview .card h2{color:#43576d;font-weight:500}.overviewTheme.memberOverview .card .eyebrow{color:#96a0b1}.overviewTheme.memberOverview .card .muted{color:#7e8fa4}
+.overviewTheme.memberOverview .revenue{background:radial-gradient(ellipse 85% 70% at 50% 5%,#e78cdb 0%,#dea0c7 44%,transparent 100%),radial-gradient(ellipse 70% 100% at 0% 48%,#e4bda7 0%,transparent 85%),radial-gradient(ellipse 70% 100% at 100% 48%,#e9bdaf 0%,transparent 85%),linear-gradient(180deg,#ead0dd 0%,#7b6b60 55%,#344b43 100%);box-shadow:inset 0 0 8px 2px #ffffffdb,inset 0 0 26px 7px #fff9f58c;color:#fff}
+.overviewTheme.memberOverview .revenue :is(h2,.eyebrow,.axis,.chartHint),.overviewTheme.memberOverview .revenueValue :is(strong,span){color:#fff}
+.overviewTheme.memberOverview .revenue select{background-color:#ffffff20;border-color:#ffffff80;color:#fff;box-shadow:inset 0 1px 3px #ffffff40}
+.overviewTheme.memberOverview .revenueChart>button{background:linear-gradient(180deg,#fffdf8c7,#fffdf82e);max-width:19px;box-shadow:inset 0 1px 2px #ffffff30}
+.overviewTheme.memberOverview .revenueChart>button:hover,.overviewTheme.memberOverview .revenueChart>button[aria-pressed=true]{background:linear-gradient(180deg,#fff,#fff4eab3)}
+.overviewTheme.memberOverview .revenue .chartTooltip{background:#6c5967e8;color:#fff;border:1px solid #ffffff80;backdrop-filter:blur(8px)}
+.overviewTheme.memberOverview .attendance{background:radial-gradient(ellipse at 35% 100%,#a3e0dd 0%,#52919c 36%,transparent 74%),radial-gradient(ellipse at 105% 70%,#a98fa9,transparent 72%),linear-gradient(160deg,#183b49 8%,#173c4a 40%,#53617a 100%);box-shadow:inset 0 0 8px 2px #ffffffda,inset 0 0 24px 5px #ffffff70;color:#fff}
+.overviewTheme.memberOverview .attendance :is(h2,.muted),.overviewTheme.memberOverview .attendanceSummary :is(strong,span,b),.overviewTheme.memberOverview .attendanceFoot,.overviewTheme.memberOverview .attendanceFoot strong{color:#fff}
+.overviewTheme.memberOverview .attendanceChart>button>span{background:#ffffff50;box-shadow:inset 0 1px 3px #ffffff60}.overviewTheme.memberOverview .attendanceChart>button[aria-pressed=true]>span{background:#fff;box-shadow:0 0 12px #ffffff20}
+.overviewTheme.memberOverview .attendanceChart :is(button,small){color:#fff}.overviewTheme.memberOverview .attendanceFoot{border-color:#ffffff65}
+.overviewTheme.memberOverview .tableWrap :is(th,td){border-color:#ffffffc0}.overviewTheme.memberOverview .tableWrap th{color:#8e9fb0}.overviewTheme.memberOverview .tableWrap td{color:#61768c}
+.overviewTheme.memberOverview .person strong{color:#536980}.overviewTheme.memberOverview .person small{color:#9aa8b9}
+.overviewTheme.memberOverview .avatar{color:#7a839b;background:#e9e4ee;border:1px solid #ffffffc0;box-shadow:inset 0 1px 3px #fff}
+.overviewTheme.memberOverview .status{border:1px solid #ffffffa0}.overviewTheme.memberOverview .expiring{background:#efdfdf;color:#987c86}
+.overviewTheme.memberOverview .membershipBanner{background:radial-gradient(ellipse at 5% 0,#fae9da,transparent 78%),radial-gradient(ellipse at 100% 110%,#e8bfc9,transparent 78%),linear-gradient(135deg,#f4d5c5,#f2dfd7 55%,#ecd0d7);box-shadow:var(--owner-rim)}
+.overviewTheme.memberOverview .membershipBanner h2{color:#624b55}.overviewTheme.memberOverview .membershipBanner :is(p,.eyebrow){color:#9b7c87}
+.overviewTheme.memberOverview .coachFooter{border-color:#ffffffb0;color:#91a2b2}.overviewTheme.memberOverview .coachFooter strong{color:#72879b}
+.overviewTheme.memberOverview :global(.studio-flows){color:#627a90}.overviewTheme.memberOverview :global(.studio-flows h2){color:#526b80}
+.overviewTheme.memberOverview :global(.workflow-list-button){color:#627a90;border-color:#ffffffc0}.overviewTheme.memberOverview :global(.workflow-list-button small){color:#93a7b8}
+.overviewTheme.memberOverview :global(.workflow-list-button .workflow-badge){color:#7b94a6;background:#ffffff50;border-color:#ffffffc0}
+.overviewTheme.memberOverview .nutritionPreview{background:radial-gradient(ellipse at 0 0,#f1d8d7,transparent 80%),radial-gradient(ellipse at 100% 100%,#e7ddef,transparent 85%),#f5e8e0}
+.overviewTheme.memberOverview .nutritionPreview .eyebrow{color:#ad8f9c}.overviewTheme.memberOverview .nutritionPreview h2{color:#796273}
+.overviewTheme.memberOverview .nutritionPreviewNumbers strong{color:#887082}.overviewTheme.memberOverview .nutritionPreviewNumbers strong small{color:#b19cab}.overviewTheme.memberOverview .nutritionPreviewNumbers span{color:#a28c9b}
+.overviewTheme.memberOverview .nutritionPreviewNumbers>div,.overviewTheme.memberOverview .nutritionPreviewFooter{border-color:#ffffffc0}.overviewTheme.memberOverview .nutritionPreviewFooter p{color:#aa93a0}
+.overviewTheme.memberOverview .footer,.overviewTheme.memberOverview .footerBrand{color:#9ba8b8}
+.overviewTheme.memberOverview .notice{background:#e1eee7;color:#6c8b7b;border-color:#fff}
+@media(max-width:900px){.overviewTheme.memberOverview .stats{gap:12px}.overviewTheme.memberOverview .stat{padding:18px;border-right:1px solid #fff}}
+@media(max-width:650px){.overviewTheme.memberOverview .stats{gap:10px}.overviewTheme.memberOverview .stat{padding:17px 14px;border-radius:22px}.overviewTheme.memberOverview .stat>strong{font-size:32px}.overviewTheme.memberOverview .card{border-radius:25px;padding:23px 20px}.overviewTheme.memberOverview :global(.workflow-range){padding:14px 16px;border-radius:22px}.overviewTheme.memberOverview .nutritionPreviewNumbers strong{font-size:29px}}
