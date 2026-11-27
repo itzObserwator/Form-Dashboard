@@ -1,0 +1,32 @@
+{
+  "name": "form-dashboard",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --hostname 0.0.0.0 --port 3001",
+    "build": "next build",
+    "start": "next start --hostname 0.0.0.0 --port 3001",
+    "typecheck": "tsc --noEmit",
+    "test": "playwright test"
+  },
+  "dependencies": {
+    "@hugeicons/core-free-icons": "4.4.0",
+    "@hugeicons/react": "1.1.10",
+    "gsap": "3.15.1",
+    "next": "16.4.6",
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.65.1",
+    "@tailwindcss/postcss": "4.3.5",
+    "@types/node": "26.6.6",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "tailwindcss": "4.3.5",
+    "typescript": "7.0.2"
+  },
+  "engines": {
+    "node": ">=24.0.0"
+  }
+}

@@ -1,0 +1,27 @@
+/* Watch-like numeric typography. Individual scale composes with the calendar's
+   selection transform, reflected numerals, and value-change animations. */
+:is(
+  .date-strip-track > .week-day > strong,
+  .recovery-card-score > span,
+  .blood-card-digits,
+  .lung-card-digits,
+  .lung-card-reflection,
+  .home-dashboard .nutrition-ledger strong,
+  .home-dashboard .wellness-ledger strong,
+  .home-dashboard .challenge-count > strong,
+  .profile-vitals dd:not(.profile-goal-value),
+  .profile-practice-grid strong,
+  .water-amount-display output,
+  .water-serving-quantity strong,
+  .muscle-map-total > strong,
+  .composition-digits,
+  .water-source-digits,
+  .journal-detail-screen :is(.daily-totals strong, .habit-total, .challenge-progress strong, .weight-values strong, .trainer-stats strong)
+) {
+  display: inline-block;
+  font-weight: 400;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -.02em;
+  scale: 1 1.12;
+  transform-origin: center;
+}

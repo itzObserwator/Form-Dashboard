@@ -1,0 +1,7 @@
+/* Shared interface symbols use Hugeicons Stroke Rounded on its native 24px grid. */
+.app-icon {
+  flex-shrink: 0;
+  vertical-align: middle;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
