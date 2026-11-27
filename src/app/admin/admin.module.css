@@ -218,3 +218,34 @@
 .overviewTheme.memberOverview .notice{background:#e1eee7;color:#6c8b7b;border-color:#fff}
 @media(max-width:900px){.overviewTheme.memberOverview .stats{gap:12px}.overviewTheme.memberOverview .stat{padding:18px;border-right:1px solid #fff}}
 @media(max-width:650px){.overviewTheme.memberOverview .stats{gap:10px}.overviewTheme.memberOverview .stat{padding:17px 14px;border-radius:22px}.overviewTheme.memberOverview .stat>strong{font-size:32px}.overviewTheme.memberOverview .card{border-radius:25px;padding:23px 20px}.overviewTheme.memberOverview :global(.workflow-range){padding:14px 16px;border-radius:22px}.overviewTheme.memberOverview .nutritionPreviewNumbers strong{font-size:29px}}
+
+/* Complete dashboard surfaces using the shared member-journal palette. */
+.overviewTheme.memberOverview .filters .search{background:#ffffff65;border-color:#fff;color:#889bb1;box-shadow:inset 0 1px 4px #fff}
+.overviewTheme.memberOverview .search input{color:#5d7690}.overviewTheme.memberOverview .search input::placeholder{color:#9aadc0}
+.overviewTheme.memberOverview select{color:#69819a;background-color:#ffffff75;border-color:#fff}
+.overviewTheme.memberOverview .count{background:#e6ddec;color:#9784a4}.overviewTheme.memberOverview .pagination{color:#95a5b9}.overviewTheme.memberOverview .pagination button{background:#ffffff80;color:#8297ae;border-color:#fff}
+.overviewTheme.memberOverview .active{background:#e0eee6;color:#789d8d}.overviewTheme.memberOverview .paused{background:#e5e7ef;color:#9198af}.overviewTheme.memberOverview .archived,.overviewTheme.memberOverview .cancelled{background:#eddde5;color:#a58899}
+.overviewTheme.memberOverview .plan{background:radial-gradient(ellipse at 0 0,#e2d7ec,transparent 78%),radial-gradient(ellipse at 100% 100%,#c9e4de,transparent 80%),#e2ebf0;box-shadow:var(--owner-rim)}
+.overviewTheme.memberOverview .plan h2{color:#506a83}.overviewTheme.memberOverview .plan>p{color:#8b9db2}.overviewTheme.memberOverview .plan li{color:#7189a0}.overviewTheme.memberOverview .plan li svg{color:#8ba3ad}
+.overviewTheme.memberOverview .planPrice{color:#5a738c}.overviewTheme.memberOverview .planPrice small{color:#9daec0}.overviewTheme.memberOverview .planFooter{border-color:#ffffffb0}.overviewTheme.memberOverview .planFooter strong{color:#7d95ab}
+.overviewTheme.memberOverview .plan:nth-child(2){background:radial-gradient(ellipse at 50% 3%,#e3a2d0,transparent 78%),radial-gradient(ellipse at 100% 100%,#9fb8ad,transparent 75%),linear-gradient(155deg,#e5bbca,#a298ac 68%,#647d7a);box-shadow:var(--owner-rim)}
+.overviewTheme.memberOverview .plan:nth-child(2) :is(h2,.planPrice,.planFooter strong){color:#fff}.overviewTheme.memberOverview .plan:nth-child(2) :is(p,li,.eyebrow,.planPrice small){color:#fff8fc}.overviewTheme.memberOverview .plan:nth-child(2) li svg{color:#fff}.overviewTheme.memberOverview .plan:nth-child(2) .planFooter{border-color:#ffffffa0}
+.overviewTheme.memberOverview .plan:nth-child(3){background:radial-gradient(ellipse at 0 0,#f5dec8,transparent 80%),radial-gradient(ellipse at 100% 100%,#e6c3d5,transparent 80%),#f0d9d9;box-shadow:var(--owner-rim)}
+.overviewTheme.memberOverview .plan:nth-child(3) :is(h2,.planPrice){color:#856d7b}.overviewTheme.memberOverview .plan:nth-child(3) :is(p,li,.eyebrow){color:#ab8e9e}
+.overviewTheme.memberOverview .trainerPortrait{background:radial-gradient(ellipse at 5% 0,#cbb6d8,transparent 78%),radial-gradient(ellipse at 100% 110%,#a7d3ce,transparent 80%),#cfdee8;color:#8293ad;border-color:#fff;box-shadow:var(--owner-rim)}
+.overviewTheme.memberOverview .trainerCard:nth-child(2n) .trainerPortrait{background:radial-gradient(ellipse at 0 0,#efd3c2,transparent 80%),#dfcbdf;color:#ae91a2}
+.overviewTheme.memberOverview .trainerCard>.eyebrow{color:#a2afc1}.overviewTheme.memberOverview .trainerCard h2{color:#576f88}.overviewTheme.memberOverview .trainerCard>p{color:#94a5bb}
+.overviewTheme.memberOverview .trainerStats{border-color:#ffffffb0}.overviewTheme.memberOverview .trainerStats strong{color:#7890aa}.overviewTheme.memberOverview .trainerStats span{color:#9caec0}
+.overviewTheme.memberOverview .nutritionTrend{background:radial-gradient(ellipse at 0 0,#d7c5e3,transparent 78%),radial-gradient(ellipse at 100% 100%,#bfdedc,transparent 78%),#e0e8f0;box-shadow:var(--owner-rim)}
+.overviewTheme.memberOverview .nutritionBars{border-color:#ffffffb0}.overviewTheme.memberOverview .nutritionBars>button{color:#9aa9bf}.overviewTheme.memberOverview .nutritionBars>button>span{background:linear-gradient(180deg,#c4aed2,#87aeb4);box-shadow:inset 0 1px 4px #ffffffb0}.overviewTheme.memberOverview .nutritionBars>button[aria-pressed=true]>span{background:linear-gradient(180deg,#ac90bd,#4f858c)}.overviewTheme.memberOverview .nutritionBars strong{color:#8a90aa}
+.overviewTheme.memberOverview .nutritionContext{background:radial-gradient(ellipse at 0 0,#e9d7e7,transparent 78%),#deece5;box-shadow:var(--owner-rim)}
+.overviewTheme.memberOverview .nutritionContext>div>strong{color:#8b9f9a}.overviewTheme.memberOverview .nutritionContext>div>span,.overviewTheme.memberOverview .nutritionContext>p{color:#8fa59e}.overviewTheme.memberOverview .nutritionContext small{color:#a5b8ae}
+.overviewTheme.memberOverview .nutritionPrivacy{color:#8ba79b;border-color:#ffffffb0}.overviewTheme.memberOverview .nutritionReason,.overviewTheme.memberOverview .cellMeta{color:#9aabc0}
+.overviewTheme.memberOverview .nutritionMeter{background:#e8e1ed}.overviewTheme.memberOverview .nutritionMeter>span{background:linear-gradient(90deg,#bba4ca,#81b0ad)}
+.overviewTheme.memberOverview .nutritionExplanation{border-color:#ffffffb0;color:#9aaabe}
+.overviewTheme.memberOverview .planBreakdown>div{color:#899eb6}.overviewTheme.memberOverview .planBreakdown>div>div{background:#e4e8ee}.overviewTheme.memberOverview .planBreakdown i{background:linear-gradient(90deg,#c2aacc,#8ab8b4)}
+.overviewTheme.memberOverview .empty{color:#9aacbd}
+.overviewTheme.memberOverview .dialogContent{color:#637d95}.overviewTheme.memberOverview .dialogContent .muted{color:#95a8bf}
+.overviewTheme.memberOverview .detailGrid>div{border-color:#ffffffb0}.overviewTheme.memberOverview .detailGrid dt{color:#95a6bc}.overviewTheme.memberOverview .detailGrid dd{color:#718aa2}
+.overviewTheme.memberOverview .memberIdentity p{color:#9aabc0}.overviewTheme.memberOverview .memberIdentity strong{color:#6c839c}.overviewTheme.memberOverview .memberIdentity .mint{background:#dcebe6;color:#7b9e99}
+.overviewTheme.memberOverview .alertRow{border-color:#ffffffb0;color:#6e879f}.overviewTheme.memberOverview .alertRow small{color:#a1b2c6}

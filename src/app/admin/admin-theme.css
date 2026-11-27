@@ -1,62 +1,65 @@
-/* Owner-only workflow and modal surfaces; member screens keep their own theme. */
+/* Owner workflows and dialogs share the member journal design system. */
 body:has([data-owner-workspace]){
- --admin-surface:linear-gradient(145deg,#f6f7f1,#e6e9df);
- --admin-ink:#526443;
- --admin-muted:#89967b;
+ --admin-surface:radial-gradient(ellipse at 0 0,#e3d9ec,transparent 75%),radial-gradient(ellipse at 100% 100%,#cce7df,transparent 78%),#e4ebf1;
+ --admin-ink:#536b82;
+ --admin-muted:#8494a8;
 }
 body:has([data-owner-workspace]) .studio-flows{color:var(--admin-ink)}
-body:has([data-owner-workspace]) .studio-flows :is(h2,h3){color:#4c5e3c;font-weight:450}
-body:has([data-owner-workspace]) .studio-flows p{color:#829071}
-body:has([data-owner-workspace]) .studio-flows .workflow-muted{color:#929d85}
-body:has([data-owner-workspace]) .workflow-card{background:var(--admin-surface);border:1px solid #ffffff90;box-shadow:inset 0 1px 2px #ffffffb0,0 4px 14px #53623706;border-radius:24px}
-body:has([data-owner-workspace]) .workflow-blue{background:radial-gradient(ellipse at 75% 0,#e5d9b8,#e8eddb 75%);box-shadow:inset 0 0 12px #ffffff80}
-body:has([data-owner-workspace]) .workflow-primary{background:#d8f34e;color:#3e4e1f;border:1px solid #e9fb9a;box-shadow:inset 0 1px 2px #ffffff70}
-body:has([data-owner-workspace]) .workflow-secondary{background:#f8faf1;color:#6f8253;border:1px solid #ffffffb0;box-shadow:inset 0 1px 2px #fff}
-body:has([data-owner-workspace]) .workflow-text{color:#6a7f47}
-body:has([data-owner-workspace]) .workflow-badge{background:#edf2df;color:#7b8c5e;border-color:#ffffffb0;font-size:11px}
-body:has([data-owner-workspace]) .workflow-eyebrow{color:#92a073}
-body:has([data-owner-workspace]) .workflow-number{color:#5c753e}
-body:has([data-owner-workspace]) .workflow-number small{color:#96a582}
+body:has([data-owner-workspace]) .studio-flows :is(h2,h3){color:#475d74;font-weight:450}
+body:has([data-owner-workspace]) .studio-flows p{color:#7b8da3}
+body:has([data-owner-workspace]) .studio-flows .workflow-muted{color:#8c9db0}
+body:has([data-owner-workspace]) .workflow-card{background:var(--admin-surface);border:1px solid #ffffff90;box-shadow:inset 0 0 10px 3px #ffffffd9,inset 0 0 28px 7px #ffffff4d;border-radius:24px}
+body:has([data-owner-workspace]) .workflow-blue{background:radial-gradient(ellipse at 0 0,#d9cce7,transparent 80%),radial-gradient(ellipse at 100% 100%,#bddedb,transparent 80%),#e1eaf2;box-shadow:inset 0 0 10px 3px #ffffffd9,inset 0 0 28px 7px #ffffff4d}
+body:has([data-owner-workspace]) .workflow-primary{background:radial-gradient(ellipse at 95% 110%,#39726f,transparent 78%),linear-gradient(135deg,#655172,#34485f);color:#fff;border:1px solid #fff;box-shadow:inset 0 0 5px 1px #ffffffb0}
+body:has([data-owner-workspace]) .workflow-secondary{background:#ffffff65;color:#6d859c;border:1px solid #ffffffb0;box-shadow:inset 0 1px 2px #fff}
+body:has([data-owner-workspace]) .workflow-text{color:#71859b}
+body:has([data-owner-workspace]) .workflow-badge{background:#ffffff50;color:#899ab0;border-color:#ffffffb0;font-size:11px}
+body:has([data-owner-workspace]) .workflow-eyebrow{color:#95a0b3}
+body:has([data-owner-workspace]) .workflow-number{color:#5e778f}
+body:has([data-owner-workspace]) .workflow-number small{color:#9aabc0}
 body:has([data-owner-workspace]) .workflow-form :is(input,select,textarea),
-body:has([data-owner-workspace]) .studio-flows :is(input:not([type=checkbox]),select,textarea){background-color:#fafbf5c0;border-color:#ffffffc0;color:#596e45;box-shadow:inset 0 1px 3px #e2e7d970}
-body:has([data-owner-workspace]) .workflow-form :is(input,textarea)::placeholder{color:#a1aa93}
-body:has([data-owner-workspace]) .studio-flows label{color:#849571}
-body:has([data-owner-workspace]) :is(input,select,textarea,button):focus-visible{outline-color:#8f9f57}
-body:has([data-owner-workspace]) .workflow-form fieldset{border-color:#dbe2ce;color:#83946e}
-body:has([data-owner-workspace]) input[type=checkbox]{accent-color:#8fa54f}
-body:has([data-owner-workspace]) .workflow-weekchecks label{background:#f4f7eb;border-color:#fff;color:#83966b}
-body:has([data-owner-workspace]) .workflow-weekchecks label:has(input:checked){background:#e6efc2;color:#667f3f}
-body:has([data-owner-workspace]) :is(.workflow-line,.workflow-list-button){border-color:#dae1cf;color:#657b4b}
-body:has([data-owner-workspace]) :is(.workflow-line,.workflow-list-button) small{color:#93a181}
-body:has([data-owner-workspace]) .workflow-metrics{gap:18px;padding:18px 0;border-block:1px solid #dde3d3}
-body:has([data-owner-workspace]) .workflow-metrics span{color:#8e9d7b}
-body:has([data-owner-workspace]) .workflow-metrics strong{color:#657f45}
-body:has([data-owner-workspace]) .workflow-metrics small{color:#94a57e}
-body:has([data-owner-workspace]) .workflow-table th{color:#8a9a76;border-color:#dbe3ce}
-body:has([data-owner-workspace]) .workflow-table td{color:#667b4e;border-color:#dbe3ce}
-body:has([data-owner-workspace]) .workflow-table small{color:#97a585}
-body:has([data-owner-workspace]) .workflow-empty{color:#95a184}
-body:has([data-owner-workspace]) .workflow-notice{background:#e8f0ce;color:#6c8644;border-color:#fff}
-body:has([data-owner-workspace]) .workflow-error{color:#a36c4b!important}
-body:has([data-owner-workspace]) .sheet{background:linear-gradient(145deg,#f1f3e9,#e3e8db);color:#546843;border:1px solid #ffffffb0;border-radius:28px;box-shadow:inset 0 1px 5px #ffffff90,0 20px 70px #35442320}
+body:has([data-owner-workspace]) .studio-flows :is(input:not([type=checkbox]),select,textarea){background-color:#ffffff65;border-color:#ffffffc0;color:#58738d;box-shadow:inset 0 1px 3px #ffffff80}
+body:has([data-owner-workspace]) .workflow-form :is(input,textarea)::placeholder{color:#a0aec1}
+body:has([data-owner-workspace]) .studio-flows label{color:#8799b0}
+body:has([data-owner-workspace]) :is(input,select,textarea,button):focus-visible{outline-color:#879eaf}
+body:has([data-owner-workspace]) .workflow-form fieldset{border-color:#ffffffb0;color:#8397ae}
+body:has([data-owner-workspace]) input[type=checkbox]{accent-color:#7e9ca4}
+body:has([data-owner-workspace]) .workflow-weekchecks label{background:#ffffff50;border-color:#fff;color:#8b9eb6}
+body:has([data-owner-workspace]) .workflow-weekchecks label:has(input:checked){background:#dce8ed;color:#6a809b}
+body:has([data-owner-workspace]) :is(.workflow-line,.workflow-list-button){border-color:#ffffffb0;color:#627b94}
+body:has([data-owner-workspace]) :is(.workflow-line,.workflow-list-button) small{color:#96a8bd}
+body:has([data-owner-workspace]) .workflow-metrics{gap:18px;padding:18px 0;border-block:1px solid #ffffffb0}
+body:has([data-owner-workspace]) .workflow-metrics span{color:#8a9eb6}
+body:has([data-owner-workspace]) .workflow-metrics strong{color:#5d7893}
+body:has([data-owner-workspace]) .workflow-metrics small{color:#9aaec0}
+body:has([data-owner-workspace]) .workflow-table th{color:#8fa2bb;border-color:#ffffffb0}
+body:has([data-owner-workspace]) .workflow-table td{color:#667f98;border-color:#ffffffb0}
+body:has([data-owner-workspace]) .workflow-table small{color:#9caec2}
+body:has([data-owner-workspace]) .workflow-empty{color:#95a6bb}
+body:has([data-owner-workspace]) .workflow-notice{background:#dfebe5;color:#688b7e;border-color:#fff}
+body:has([data-owner-workspace]) .workflow-error{color:#a96e83!important}
+body:has([data-owner-workspace]) .sheet{background:radial-gradient(ellipse at 0 0,#e9dfee,transparent 80%),linear-gradient(145deg,#f5f3f7,#e0eee8);color:#526b84;border:1px solid #ffffffb0;border-radius:28px;box-shadow:inset 0 0 10px 3px #ffffffb0,0 20px 70px #34496320}
 body:has([data-owner-workspace]) .sheet>header{background:transparent;border-color:#ffffffa0}
-body:has([data-owner-workspace]) .sheet>header h2{color:#475d35;font-weight:500}
-body:has([data-owner-workspace]) .sheet>header button{background:#f9fbf0;color:#728551}
-body:has([data-owner-workspace]) .sheet .sheet-body{color:#5c7249}
-body:has([data-owner-workspace]) .owner-admin-sheet :is(p,dt,label){color:#899978}
-body:has([data-owner-workspace]) .owner-admin-sheet dd{color:#62794a}
-body:has([data-owner-workspace]) .owner-admin-sheet :is(input:not([type=checkbox]),textarea,select){background-color:#f7faf0bf;border-color:#fff;color:#60764b}
-body:has([data-owner-workspace]) .owner-admin-sheet button[class*="primaryButton"]{background:#d8f34e;color:#3d4e1f;border-color:#e9fb9a;box-shadow:inset 0 1px 2px #ffffff70}
-body:has([data-owner-workspace]) .owner-admin-sheet button[class*="secondaryButton"]{background:#f8faf1;color:#6f8253;border-color:#fff}
-body:has([data-owner-workspace]) .workflow-receipt{background:#f8faf1b0;border-color:#fff}
-body:has([data-owner-workspace]) .workflow-receipt dl>div{border-color:#dae3cc}
-body:has([data-owner-workspace]) .workflow-receipt dt{color:#8a9c75}
-body:has([data-owner-workspace]) .workflow-receipt dd{color:#617e42}
-body:has([data-owner-workspace]) .workflow-wordmark{color:#6d8251}
-body:has([data-owner-workspace]) :is(.trainer-contact,.trainer-profile-heading,.trainer-management,.member-profile-identity,.member-status-action){border-color:#d8e2ca}
-body:has([data-owner-workspace]) .trainer-contact dt{color:#8e9e7b}
-body:has([data-owner-workspace]) .trainer-contact dd{color:#69834a}
-body:has([data-owner-workspace]) .trainer-management>span{color:#90a078}
-body:has([data-owner-workspace]) .trainer-management>.workflow-secondary{color:#987857}
+body:has([data-owner-workspace]) .sheet>header h2{color:#445c74;font-weight:500}
+body:has([data-owner-workspace]) .sheet>header button{background:#ffffff70;color:#738aa2}
+body:has([data-owner-workspace]) .sheet .sheet-body{color:#5a7591}
+body:has([data-owner-workspace]) .owner-admin-sheet :is(p,dt,label){color:#899eb6}
+body:has([data-owner-workspace]) .owner-admin-sheet dd{color:#66809b}
+body:has([data-owner-workspace]) .owner-admin-sheet :is(input:not([type=checkbox]),textarea,select){background-color:#ffffff65;border-color:#fff;color:#627e99}
+body:has([data-owner-workspace]) .owner-admin-sheet button[class*="primaryButton"]{background:radial-gradient(ellipse at 95% 110%,#39726f,transparent 78%),linear-gradient(135deg,#655172,#34485f);color:#fff;border-color:#fff;box-shadow:inset 0 0 5px 1px #ffffffb0}
+body:has([data-owner-workspace]) .owner-admin-sheet button[class*="secondaryButton"]{background:#ffffff65;color:#6d859c;border-color:#fff}
+body:has([data-owner-workspace]) .workflow-receipt{background:#ffffff65;border-color:#fff}
+body:has([data-owner-workspace]) .workflow-receipt dl>div{border-color:#ffffffb0}
+body:has([data-owner-workspace]) .workflow-receipt dt{color:#93a5bc}
+body:has([data-owner-workspace]) .workflow-receipt dd{color:#6b829f}
+body:has([data-owner-workspace]) .workflow-wordmark{color:#7487a1}
+body:has([data-owner-workspace]) :is(.trainer-contact,.trainer-profile-heading,.trainer-management,.member-profile-identity,.member-status-action){border-color:#ffffffb0}
+body:has([data-owner-workspace]) .trainer-contact dt{color:#90a4bc}
+body:has([data-owner-workspace]) .trainer-contact dd{color:#718aa4}
+body:has([data-owner-workspace]) .trainer-management>span{color:#98aac0}
+body:has([data-owner-workspace]) .trainer-management>.workflow-secondary{color:#a38191}
 body:has([data-owner-workspace]) .member-primary-actions>button{font-size:13px}
 @media(max-width:650px){body:has([data-owner-workspace]) .workflow-card{padding:22px 18px;border-radius:22px}body:has([data-owner-workspace]) .sheet{border-radius:25px}body:has([data-owner-workspace]) .workflow-metrics{gap:14px}}
+body:has([data-owner-workspace]) .workflow-form input[type=checkbox]{box-shadow:none;background:transparent}
+body:has([data-owner-workspace]) .workflow-form :is(input,select,textarea):focus-visible{outline-color:#91a5b8}
+body:has([data-owner-workspace]) .workflow-loading{background:radial-gradient(ellipse at 0 0,#e7d9ed,transparent 78%),#e1eeea;border:1px solid #fff;border-radius:28px;box-shadow:inset 0 0 10px 3px #ffffffc0;color:#506780}
